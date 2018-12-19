@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.k.uas_coba.Detail.DetailEvent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/detailevent_imgevent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/m_event"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menubawah"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="View Map"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Kembali"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/menubawah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detailevent_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Event"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detailevent_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            />
+
+        <TextView
+            android:id="@+id/detailevent_jadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jadwal"/>
+
+        <TextView
+            android:id="@+id/detailevent_poin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poin"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
